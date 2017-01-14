@@ -5,6 +5,17 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
+import { AngularFireModule } from 'angularfire2';
+
+// Must export the config
+export const firebaseConfig = {
+  apiKey: 'AIzaSyALiG_4jZmPjKdjOMEkBTNPCeqEPeDAeM0',
+  authDomain: 'business-contacts-6f2ad.firebaseapp.com',
+  databaseURL: 'https://business-contacts-6f2ad.firebaseio.com',
+  storageBucket: 'business-contacts-6f2ad.appspot.com',
+  messagingSenderId: '399561603052'
+};
+
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +23,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
