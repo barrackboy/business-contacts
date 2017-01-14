@@ -1,4 +1,4 @@
-<!--<div class="top-bar">
+<div class="top-bar">
   <div class="row">
     <div class="top-bar-left">
       <ul class="menu">
@@ -25,8 +25,8 @@
         <th></th>
       </tr>
     </thead>
-    <tybody>
-      <tr *ngFor="let businesse of businesses">
+    <tbody>
+      <tr *ngFor="let business of businesses">
         <td>{{business.company}}</td>
         <td>{{business.category}}</td>
         <td>{{business.phone}}</td>
@@ -40,8 +40,8 @@
   </table>
   </div>
   </div>
-</div>-->
+</div>
 
-<ul *ngFor="let item of items | async">
+<!--<ul *ngFor="let item of items | async">
   <li>{{item.value}}</li>
-</ul>
+</ul>-->

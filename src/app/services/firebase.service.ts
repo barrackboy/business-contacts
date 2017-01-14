@@ -3,6 +3,7 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import 'rxjs/add/operator/map';
 import{Business} from'../Business';
 import{Category} from'../Category';
+
 @Injectable()
 export class FirebaseService{
     businesses: FirebaseListObservable<Business[]>;
